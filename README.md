@@ -1,2 +1,2 @@
 # petro-calculator
-A petro calculator in Javascript
+A petro calculator made in Javascript

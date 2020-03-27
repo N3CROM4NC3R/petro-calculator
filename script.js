@@ -10,7 +10,24 @@ class Calculator{
             'sovereign':document.getElementById('sovereignInput'),
         }
         this.subTitle = document.getElementById('calculator-subTitle');
-        this.validCharacters = ['0','1','2','3','4','5','5','6','7','8','.','Backspace','ArrowUp','ArrowDown','ArrowRight','ArrowLeft'];
+        this.validCharacters = [
+            '0',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '5',
+            '6',
+            '7',
+            '8',
+            '.',
+            'Backspace',
+            'ArrowUp',
+            'ArrowDown',
+            'ArrowRight',
+            'ArrowLeft'
+        ];
         this.initialitate();
     }
 
@@ -125,17 +142,8 @@ class Calculator{
     showError(error){
         console.log(error);
     }
-    change(e){
-        // this.validate.then(
-        //     e=>this.calculate(e)
-        // ).catch(
-        //     error=>this.showErrorApi(error)
-        // );
-        this.calculate(e);
-    }
     calculate(e){
-        // this.validate(e);
-        if(!(e.target.id === 'petroInput')){
+        if(e.target.id != 'petroInput'){
 
             let price = this.givePrice(e.target.id);
             let value = e.target.value;
@@ -147,10 +155,7 @@ class Calculator{
         this.putPrices(this.inputs.dollar,e);
 
     }
-    // validate(e){
-    //     if(codeCha)
-    //
-    // }
+
     putPrices(input,e){
         if (e.target.id != input.id && input.id != 'petroInput'){
             let price = this.givePrice(input.id);
@@ -175,4 +180,3 @@ class Calculator{
 }
 
 window.calculator = new Calculator()
-console.log("Hola");

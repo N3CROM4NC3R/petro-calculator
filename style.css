@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#000000;
+    font-family:'Noto Sans TC',sans-serif;
+    background-image: url("images/petro.jpg");
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+.calculator{
+    opacity: 0.9;
+    background-color:#ffaa04;
+    color:#FFFFFF;
+    padding:10px;
+    border-radius: 10px;
+}
+.calculator-title{
+    text-align: center;
+}
+.calculator-subTitle{
+    text-align:center;
+}
+.calculator-column{
+    display:inline-block;
+}
+a{
+    color:#FFFFFF;
+    text-decoration:none;
+    background-color:blue;
+    padding:10px;
+    font-size:20px;
+    border-radius:10px;
+    transition-duration: .5s;
+    box-sizing: border-box;
+}
+a:hover{
+    font-size:25px;
+    padding:5px;
+}
+.footer{
+    margin-top:10px;
+    background-color:#FFFFFF;
+    opacity: 0.9;
+    padding:10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

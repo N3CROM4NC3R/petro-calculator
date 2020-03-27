@@ -21,6 +21,7 @@ class Calculator{
             '6',
             '7',
             '8',
+            '9',
             '.',
             'Backspace',
             'ArrowUp',

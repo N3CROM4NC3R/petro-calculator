@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?cz5r5k');
+  src:  url('../fonts/icomoon.eot?cz5r5k#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?cz5r5k') format('truetype'),
+    url('../fonts/icomoon.woff?cz5r5k') format('woff'),
+    url('../fonts/icomoon.svg?cz5r5k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
+
+*{
+    font-family:'Noto Sans TC',sans-serif;
+
+}
+
+.container{
+    margin:0 10%;
+}
+
+/*Body/Cuerpo*/
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color:#000000;
+
+    background-image: url("../images/petro.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90vh;
+}
+
+/*Calculator/Calculadora*/
+.calculator{
+    width:auto;
+    opacity: 0.9;
+    background-color:#ffaa04;
+    color:#FFFFFF;
+    padding:10px;
+    border-radius: 10px;
+}
+.calculator-title{
+    text-align: center;
+}
+.calculator-subTitle{
+    text-align:center;
+}
+.calculator-column{
+    display:inline-block;
+
+}
+
+.calculator-column input{
+    width:90%;
+}
+
+/*--footer/pie--*/
+.footer{
+    margin-top:10px;
+    background-color:#FFFFFF;
+    opacity: 0.9;
+    padding:10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align:center;
+}
+.contact-github a{
+    color:#FFFFFF;
+    text-decoration:none;
+    background-color:blue;
+    padding:10px;
+    font-size:20px;
+    border-radius:10px;
+    transition-duration: .5s;
+    box-sizing: border-box;
+}
+.contact-github a:hover{
+    font-size:25px;
+    padding:5px;
+}
